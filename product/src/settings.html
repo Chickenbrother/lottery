@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./lib/ajax.js"></script>
+    <title>抽奖设置</title>
+</head>
+<body>
+    <div class="canvas-box" >
+        <canvas id="canvas">你的浏览器不支持canvas</canvas>
+    </div>
+    <div id="container" style="width: 80%;">
+        <div id="content">
+            <div class="layui-row layui-col-space20">
+                <div class="layui-col-xs6">
+                  <div class="grid-demo">
+                    <h1>奖项设置<span>（请按抽奖顺序添加）</span></h1>
+                    <table id="prizeListTable" lay-filter="demo"></table>
+                  </div>
+                </div>
+                <div class="layui-col-xs6">
+                  <div class="grid-demo"> 
+                      <h1>奖池设置<span>（请按抽奖顺序添加）</span></h1>
+                    <table id="prizeListCountTable"></table>
+                    </div>
+                </div>
+              </div>
+            <!-- <div class="content-left">
+                <h1>奖项设置<span>（请按抽奖顺序添加）</span></h1>
+                <table id="prizeListTable"></table>
+            </div>
+            <div class="content-right">
+                <h1>奖池设置<span>（请按抽奖顺序添加）</span></h1>
+                <table id="prizeListCountTable"></table>
+            </div> -->
+
+        </div>
+        <div id="bottomDiv">
+            <h1>参与人员列表<span>（请按抽奖顺序添加）</span></h1>
+            <table id="personTable"></table>
+        </div>
+    </div>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+      </script>
+    
+    
+</body>
+</html>
